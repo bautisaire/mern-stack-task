@@ -1,7 +1,6 @@
 require("dotenv").config()
 const mongoose = require("mongoose");
-//const URI = process.env.MONGO_ATLAS;
-const URI = "mongodb+srv://Misaianes:srdinero741@cluster0.rluxc.mongodb.net/mernStackTask?retryWrites=true&w=majority";
+const URI = process.env.MONGO_ATLAS;
 mongoose.connect(URI)
 .then(db=>{
     console.log("DB is connected")
